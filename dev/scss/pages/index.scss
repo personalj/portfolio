@@ -679,9 +679,9 @@ body {
 
 @media all and (max-width: 544px) { 
 	.about__info-pic {
-		padding: 0;
+		padding: 0 0 0 20px;
 	}
-	// .works__img-item.active:before {
-	// 	padding-top: 58%;
-	// }
+	.works__img-item.active:before {
+		padding-top: 58%;
+	}
 }
