@@ -108,20 +108,22 @@ $( document ).ready(function() {
     	 	btnNextFirst = $this.closest('.works__inner').find('.works__controllers-list_next .works__controllers-item').first(),
     	 	btnNextLast = $this.closest('.works__inner').find('.works__controllers-list_next .works__controllers-item').last(),
     	 	btnPrevFirst = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item').first(),
-    	 	btnPrevLast = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item').last();
+    	 	btnPrevLast = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item').last(),
+    	 	nextImg =   $this.closest('.works__inner').find('.works__controllers-list_next .works__controllers-item'),
+    	 	prevImg = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item');
 
 
 
     	   
-    	   var   
+    	   // var   
     	     
-    	        nextImg =   $this.closest('.works__inner').find('.works__controllers-list_next .works__controllers-item'),
+    	   //      nextImg =   $this.closest('.works__inner').find('.works__controllers-list_next .works__controllers-item'),
     	        // nextImgActive = $this.closest('.works__inner').find('.works__controllers-list_next .works__controllers-item.active'),
     	        // nextImgFirst = nextImg.first(),
     	        // nextImgLast = nextImg.last(),
 
-    	        prevImg = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item')
-    	        flag =true;
+    	        // prevImg = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item')
+    	        // flag =true;
     	        // prevImgActive = $this.closest('.works__inner').find('.works__controllers-list_prev .works__controllers-item.active'),
     	        // prevImgFirst = prevImg.first(),
     	        // prevImgLast = prevImg.last();
@@ -168,44 +170,44 @@ $( document ).ready(function() {
 
     	   
 
-    	   function directionPic(direction) {
+    	   // function directionPic(direction) {
     	     
 
     	         
 
-    	     if(direction === 'forward') {
-	    	       if(nextImg.length ) {
-	    	          nextImg.css({top: "100" + "%"});
-	    	          nextImgActive.css({top: "50" + "%"});
-	    	          // imgUpActivePrev.css({top: "-100" + "%"} );
-	    	       }else {
-	    	         nextImgFirst.css({top: "50" + "%"} );
-	    	       }
-	    	       if(prevImg.length ) {
-	    	          prevImg.css({top: "-100" + "%"} );
-	    	          prevImgActive.css({top: "50" + "%"} );
-	    	       }else {
-	    	         prevImgLast.css({top: "50" + "%"} );
-	    	       }
-	    	       console.log(1);
-    	     }else {
-	    	     	if(nextImg.length ) {
-	    	     	   nextImg.css({top: "-100" + "%"} );
-	    	     	   nextImgActive.css({top: "50" + "%"} );
-	    	     	}else {
-	    	     	  nextImgLast.css({top: "50" + "%"} );
-	    	     	}
-	    	     	if(prevImg.length ) {
-	    	     	   prevImg.css({top: "100" + "%"} );
-	    	     	   prevImgActive.css({top: "50" + "%"} );
-	    	     	}else {
-	    	     	  prevImgLast.css({top: "-100" + "%"} );
-	    	     	}
-	    	     	console.log(2);
-    	     }
+    	     // if(direction === 'forward') {
+	    	    //    if(nextImg.length ) {
+	    	    //       nextImg.css({top: "100" + "%"});
+	    	    //       nextImgActive.css({top: "50" + "%"});
+	    	    //       // imgUpActivePrev.css({top: "-100" + "%"} );
+	    	    //    }else {
+	    	    //      nextImgFirst.css({top: "50" + "%"} );
+	    	    //    }
+	    	    //    if(prevImg.length ) {
+	    	    //       prevImg.css({top: "-100" + "%"} );
+	    	    //       prevImgActive.css({top: "50" + "%"} );
+	    	    //    }else {
+	    	    //      prevImgLast.css({top: "50" + "%"} );
+	    	    //    }
+	    	    //    console.log(1);
+    	     // }else {
+	    	    //  	if(nextImg.length ) {
+	    	    //  	   nextImg.css({top: "-100" + "%"} );
+	    	    //  	   nextImgActive.css({top: "50" + "%"} );
+	    	    //  	}else {
+	    	    //  	  nextImgLast.css({top: "50" + "%"} );
+	    	    //  	}
+	    	    //  	if(prevImg.length ) {
+	    	    //  	   prevImg.css({top: "100" + "%"} );
+	    	    //  	   prevImgActive.css({top: "50" + "%"} );
+	    	    //  	}else {
+	    	    //  	  prevImgLast.css({top: "-100" + "%"} );
+	    	    //  	}
+	    	    //  	console.log(2);
+    	     // }
     	       
 
-    	   }
+    	   // }
 
 
     	})
