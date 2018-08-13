@@ -588,7 +588,7 @@ body {
 	&.active {
 		top: 50%;
 		transform: translate(-50%, -50%);
-		transition: .4s;
+		transition: .7s;
 		&:before {
 			content: '';
 			display: block;
@@ -626,7 +626,7 @@ body {
 		top: 50%;
 		transform: translate(-50%, -50%);
 		background-size: cover;
-		transition: .4s;
+		transition: .7s;
 		&:before {
 			content: '';
 			display: block;
