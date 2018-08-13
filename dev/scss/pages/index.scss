@@ -5,6 +5,10 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	max-width: 1170px;
+}
+
 $gray-color: #d3d3d3;
 $black-color: #3a4044;
 $orange-color: #ffa500;
@@ -647,11 +651,15 @@ body {
 	}
 }
 
-@media all and (max-width: 768px) { 
+@media all and (max-width: 991px) { 
 	.about__left, .about__right, .skills__section {
 		width: 100%;
 		margin-top: 40px;
 	}
+}
+
+@media all and (max-width: 768px) { 
+	
 	.skills__section {
 		padding: 0;
 	}
@@ -662,5 +670,18 @@ body {
 	}
 	.works__controllers-info {
 		height: 100px;
+	}
+	.works__controllers-list_next .works__controllers-item.active, .works__controllers-list_prev .works__controllers-item.active {
+		transition: .1s;
+	}
+
+}
+
+@media all and (max-width: 544px) { 
+	.about__info-pic {
+		padding: 0;
+	}
+	.works__img-item.active:before {
+		padding-top: 58%;
 	}
 }
