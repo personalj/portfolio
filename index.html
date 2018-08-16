@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="ru">
 <head>
   <meta charset="utf-8"/>
   <title>Alex Popel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="js/ie-detector.js"></script>
   <script src="js/modernizr.js"></script>
   <!--[if lte IE 9]><meta http-equiv="X-UA-Compatible" content="IE=edge"/><![endif]-->
 
-  <!--
+  
     <link rel="shortcut icon" href="favicon.ico"/>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="author" content="">
     <meta name="robots" content="index,follow">
     <meta name="copyright" content="">
-  -->
+  
 
 </head>
 
@@ -25,7 +26,7 @@
 <div id="page-wrapper" class="page-wrapper">
   
   <div id="page-body" class="page-body">
-    <section class="hero">
+    <div class="hero">
 	<div class="hero__bg-holder">
 		<div id="particles-js"></div>
 	</div>
@@ -36,38 +37,40 @@
 					<div class="social">
 						<ul class="social__list">
 							<li class="social__item">
-								<a href="" class="social__link">
-									<span class="icon icon_vk"></span>
+								<a href="https://vk.com/a.popel" class="social__link" target="blank">
+									<i class="fab fa-vk"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a href="" class="social__link">
-									<span class="icon icon_fb"></span>
+								<a href="https://www.facebook.com/profile.php?id=100004266346873&ref=bookmarks" class="social__link" target="blank">
+									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
 							<li class="social__item">
-								<a href="" class="social__link">
-									<span class="icon icon_linkedin"></span>
+								<a href="#" class="social__link" target="blank">
+									<span class="fab fa-linkedin-in"></span>
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="header__tel"><a href="tel:+380961739351" class="header__tel"></a></div>
+				<div class="header__tel"><a href="tel:+380961739351" class="header__tel">
+					<i class="fas fa-phone-volume"></i>
+				</a></div>
 				<div class="header__nav">
 					<nav class="nav">
-						<ul class="nav__list">
+						<ul class="nav__list" data-target="navigation">
 							<li class="nav__item">
-								<a href="" class="nav__link">Обо мне</a>
+								<a href="about" class="nav__link">Обо мне</a>
 							</li>
 							<li class="nav__item">
-								<a href="" class="nav__link">Мои работы</a>
+								<a href="work" class="nav__link">Мои работы</a>
 							</li>
 							<li class="nav__item">
-								<a href="" class="nav__link">Контакты</a>
+								<a href="contacts" class="nav__link">Контакты</a>
 							</li>
 						</ul>
-						<div class="nav__burger">
+						<div class="nav__burger" data-opener="navigation">
 							<span class="nav__burger-icon"></span>
 						</div>
 					</nav>
@@ -76,10 +79,10 @@
 			<div class="hero__info">
 				<div class="personal-info">
 					<div class="personal-info__avatar">
-						<img src="img/avatar.jpg" alt="" class="personal-info__pic" alt="">
+						<img src="img/avatar.jpg" alt="" class="personal-info__pic" >
 					</div>
 					<h1 class="personal-info__title">Александр Попель</h1>
-					<p class="personal-info__subtitle">Личный сайт Web разработчика</p>
+					<h2 class="personal-info__subtitle">Личный сайт Web разработчика</h2>
 				</div>
 			</div>
 		</div>
@@ -91,24 +94,21 @@
 	</div>
 	<div class="hero__elem">
 		<div class="arrow-down">
-			<dspan class="icon icon_arrow-down"></span>
+			<i class="far fa-arrow-alt-circle-up"></i>
 		</div>
 	</div>
-</section>
-<section class="about section">
+</div>
+<section class="about section" data-aos="fade-up" data-section="about">
 	<div class="container">
 		<div class="section-heading">
 			<h2 class="section-title">Обо мне</h2>
-			<div class="section-heading__elem">
-				<div class="icon icon_dev"><img src="img/settings.png" alt=""></div>
-			</div>
 		</div>
 		<div class="about__inner">
 			<div class="about__left">
 				<div class="about__info">
 					<div class="about__info-pic">
 						<img src="img/about-img.jpg" alt="" class="about__info-img">
-						<div class="about__info-elem"></div>
+						<div class="about__info-elem">A</div>
 					</div>
 				</div>
 			</div>
@@ -128,7 +128,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="skills">
+	<div class="skills" data-aos="fade-up">
 		<div class="container">
 			<div class="skills__inner">
 				<div class="skills__section">
@@ -226,26 +226,23 @@
 		 </svg>
 	</div>
 </section>
-<section class="works section">
+<section class="works section" data-aos="fade-up" data-section="work">
 	<div class="container">
 		<div class="section-heading">
 			<h2 class="section-title">Портфолио</h2>
-			<div class="section-heading__elem">
-				<div class="icon icon_dev"><img src="img/settings.png" alt=""></div>
-			</div>
 		</div>
 	</div>
 	<div class="works__inner">
-		<div class="works__info">
+		<div class="works__info" div data-aos="fade-left">
 			<ul class="works__info-list">
 				<li class="works__info-item active">
 					<h3 class="works__info-title">Consulex</h3>
-					<div class="works__info-about">scss gulp jquery javascript git</div>
+					<div class="works__info-about">scss gulp jquery git</div>
 					<a href="https://personalj.github.io/consulex/index.html" class="works__info-link" target="blank">Посмотреть сайт</a>
 				</li>
 				<li class="works__info-item">
 					<h3 class="works__info-title">Маки</h3>
-					<div class="works__info-about">scss gulp jade jquery javascript git</div>
+					<div class="works__info-about">scss gulp jade jquery git</div>
 					<a href="https://personalj.github.io/maki/index.html" class="works__info-link" target="blank">Посмотреть сайт</a>
 				</li>
 				<li class="works__info-item">
@@ -304,48 +301,75 @@
 					<a href="https://www.dropbox.com/sh/9iti6hgc8wpb5wl/AAC7wCapx2vGbV4lqxg1Cf2na?dl=0" class="works__info-link" target="blank">Посмотреть дизайн</a>
 				</li>
 			</ul>
-			
+			<div class="works__elem-wrapper">
+				<div class="works__elem">
+					<i class="icon fab fa-html5"></i>
+				</div>
+				<div class="works__elem">
+					<i class="icon fab fa-css3"></i>
+				</div>
+				<div class="works__elem">
+					<i class="icon fab fa-github-square"></i>
+				</div>
+				<div class="works__elem">
+					<i class="icon fab fa-js-square"></i>
+				</div>
+				<div class="works__elem">
+					<i class="icon fab fa-php"></i>
+				</div>
+				<div class="works__elem">
+					<i class="icon far fa-image"></i>
+				</div>
+			</div>
 		</div>
 		<div class="works__content">
 			<div class="works__img">
 				<ul class="works__img-list">
-					<li class="works__img-item active" style="background-image: url('img/slider/1.jpg')">
+					<li class="works__img-item active" >
+						<img src="img/slider/1.jpg" alt="" class="works__img-pic">
+					</li>
+					<li class="works__img-item">
+						<img src="img/slider/2.jpg" alt="" class="works__img-pic">
+					</li>
+					<li class="works__img-item">
+						<img src="img/slider/3.jpg" alt="" class="works__img-pic">
+					</li>
+					<li class="works__img-item" >
+						<img src="img/slider/4.jpg" alt="" class="works__img-pic">
+					</li>
+					<li class="works__img-item">
+						<img src="img/slider/5.jpg" alt="" class="works__img-pic">
 
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/2.jpg')">
-
-					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/3.jpg')">
-
-					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/4.jpg')">
-
-					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/5.jpg')">
-
-					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/6.jpg')">
+					<li class="works__img-item" >
+						<img src="img/slider/6.jpg" alt="" class="works__img-pic">
 		
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/7.jpg')">
+					<li class="works__img-item">
+						<img src="img/slider/7.jpg" alt="" class="works__img-pic">
 	
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/8.jpg')">
+					<li class="works__img-item" >
+						<img src="img/slider/8.jpg" alt="" class="works__img-pic">
 
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/9.jpg')">
+					<li class="works__img-item">
+						<img src="img/slider/9.jpg" alt="" class="works__img-pic">
 
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/10.jpg')">
+					<li class="works__img-item">
+						<img src="img/slider/10.jpg" alt="" class="works__img-pic">
 
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/11.jpg')">
+					<li class="works__img-item">
+						<img src="img/slider/11.jpg" alt="" class="works__img-pic">
+					</li>
+					<li class="works__img-item">
+						<img src="img/slider/12.jpg" alt="" class="works__img-pic">
 
 					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/12.jpg')">
-
-					</li>
-					<li class="works__img-item" style="background-image: url('img/slider/13.jpg')">
+					<li class="works__img-item">
+						<img src="img/slider/13.jpg" alt="" class="works__img-pic">
 
 					</li>
 				</ul>
@@ -353,100 +377,193 @@
 			<div class="works__controllers">
 				<div class="works__controllers-info">
 					<ul class="works__controllers-list works__controllers-list_prev">
-						<li class="works__controllers-item" style="background-image: url('img/slider/1.jpg')">
-						
+						<li class="works__controllers-item">
+							<img src="img/slider/1.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/2.jpg')">
+						<li class="works__controllers-item" >
+							<img src="img/slider/2.jpg" alt="" class="works__controllers-pic">
 
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/3.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/3.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/4.jpg')">
-	
+						<li class="works__controllers-item" >
+							<img src="img/slider/4.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/5.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/5.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/6.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/6.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/7.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/7.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/8.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/8.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/9.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/9.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/10.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/10.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/11.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/11.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/12.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/12.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item active" style="background-image: url('img/slider/13.jpg')">
-
+						<li class="works__controllers-item active" >
+							<img src="img/slider/13.jpg" alt="" class="works__controllers-pic">
 						</li>
 					</ul>
-					<a href="#" class="works__controllers-btn btn-prev"></a>
+					<a href="#" class="works__controllers-btn btn-prev">
+						<i class="icon far fa-arrow-alt-circle-up"></i>
+					</a>
 				</div>
 				<div class="works__controllers-info">
 					<ul class="works__controllers-list works__controllers-list_next">
-						<li class="works__controllers-item" style="background-image: url('img/slider/1.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/1.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item active" style="background-image: url('img/slider/2.jpg')">
-
+						<li class="works__controllers-item active" >
+							<img src="img/slider/2.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/3.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/3.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/4.jpg')">
-	
+						<li class="works__controllers-item" >
+							<img src="img/slider/4.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/5.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/5.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/6.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/6.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/7.jpg')">
-	
+						<li class="works__controllers-item" >
+							<img src="img/slider/7.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/8.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/8.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/9.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/9.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/10.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/10.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/11.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/11.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/12.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/12.jpg" alt="" class="works__controllers-pic">
 						</li>
-						<li class="works__controllers-item" style="background-image: url('img/slider/13.jpg')">
-
+						<li class="works__controllers-item" >
+							<img src="img/slider/13.jpg" alt="" class="works__controllers-pic">
 						</li>
 					</ul>
-					<a href="#" class="works__controllers-btn btn-next"></a>
+					<a href="#" class="works__controllers-btn btn-next">
+						<i class=" icon far fa-arrow-alt-circle-up"></i>
+					</a>
 				</div>		
 			</div>
 		</div>
 	</div>
+
 </section>
+<section class="contacts section" data-aos="fade-up" data-section="contacts">
+	<div class="contacts__triangle">
+		<svg class="triangle-svg" version="1.1" xml:space="preserve" viewBox="0 0 100 160" preserveAspectRatio="none">
+		    <polygon class="triangle-polygon" points="0,0 100,160 50.1,220 0,220 0,160"></polygon>
+		 </svg>
+	</div>
+	<div class="container">
+		<div class="section-heading">
+			<h2 class="section-title">Контакты</h2>
+		</div>
+		<div class="contacts__inner">
+			<div class="contacts__left">
+				<div class="contacts__item">
+					<a href="tel:+380961739351" class="contacts__link">
+						<i class="icon fas fa-phone-volume"></i>
+						<span class="contacts__descr">(096) 173 93 51</span>
+					</a>
+				</div>
+				<div class="contacts__item">
+					<a href="viber://add?number=+380966773927" class="contacts__link">
+						<i class="icon fab fa-viber"></i>
+						<span class="contacts__descr">(096) 173 93 51</span>
+					</a>
+				</div>
+				<div class="contacts__item">
+					<a href="mailto:popelaleksandr@gmail.com" class="contacts__link">
+						<i class="icon far fa-envelope"></i>
+						<span class="contacts__descr">popelaleksandr@gmail.com</span>
+					</a>
+				</div>
+			</div>
+			<div class="contacts__right">
+				<div class="contact-form" data-aos="fade-up">
+					<div class="contact-form__top">
+						<div class="contact-form__title">Отправить сообщение</div>
+					</div>
+					<div class="contact-form__bottom">
+						<form action="send.php" method="post" class="contact-form__tag" id="form">
+							<div class="contact-form__row">
+								<input type="text" name="name" placeholder="Ваше имя *" class="contact-form__input">
+							</div>
+							<div class="contact-form__row">
+								<input type="email" name="email" placeholder="Ваш Email *" class="contact-form__input contact-form__email" >
+							</div>
+							<div class="contact-form__row">
+								<textarea placeholder="Ваше сообщение" class="contact-form__textarea" name="text"></textarea>
+							</div>
+							<input type="submit" name="submit" value="Отправить" class="contact-form__submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-pop-up">
+		<div class="contact-pop-up__title">
+			Ваше сообщение отправлено
+		</div>
+	</div>
+</section>
+<a href="#" class="btn-top">
+	<span class="icon fas fa-arrow-up"></span>
+</a>
 <div class="welcome-overlay"></div>
   </div>
 
-  
+  <footer class="footer">
+	<div class="container">
+		<div class="footer__social">
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a href="https://vk.com/a.popel" class="social__link">
+							<i class="icon fab fa-vk"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="https://www.facebook.com/profile.php?id=100004266346873&ref=bookmarks" class="social__link">
+							<i class="icon fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li class="social__item">
+						<a href="" class="social__link">
+							<span class="icon fab fa-linkedin-in"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </div>
 
@@ -458,6 +575,8 @@ ___________________________________________________________________________-->
 <script src="js/common.js"></script>
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/mod.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/main.js"></script>
 <script src="//localhost:35729/livereload.js"></script>
 

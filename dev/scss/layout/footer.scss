@@ -1,0 +1,17 @@
+.footer {
+	padding: 40px 0;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #0d1d38;
+	align-items: center;
+	background-image: url(../img/hero_bg1.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	.social__link {
+		.icon {
+			color: #ffffff;
+			font-size: 1.5rem;
+		}
+	}
+}
