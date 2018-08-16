@@ -5,13 +5,10 @@ a {
 	text-decoration: none;
 }
 
+
 body, html {
 	height: 100%;
 	width: 100%;
-}
-
-body {
-	overflow-x: hidden;
 }
 
 input[type] {
@@ -533,6 +530,7 @@ body {
 .works {
 	padding: 60px 0;
 	position: relative;
+	overflow: hidden;
 	&__inner {
 		margin-top: 60px;
 		display: flex;
